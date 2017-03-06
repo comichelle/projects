@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+	img  {
+		position: absolute;
+		margin-top: 100px;
+	}
+	
+	#rocketAnimate.animate {
+		animation-name: move;
+		animation-duration: 2s;
+		animation-timing-function: ease;
+		animation-iteration-count: 1; /*animation will play only once*/
+		animation-direction: normal;
+		animation-delay: 0;
+		animation-play-state: running;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes move {
+
+		/*from {
+		    -webkit-transform: translateX(0);
+		  }
+
+		  to {
+		    -webkit-transform: translateX(100px);
+		  }*/
+
+/************************************/
+
+		0% {  
+  			transform: translate(0px, 0px); 
+   			 }  
+
+   		5% {  
+  			transform: translate(10px, -10px); 
+   			 }
+
+		 5% {  
+		transform: translate(30px, 10px); 
+		 }
+
+	    40% {  
+	        transform: translate(50px,-50px);  
+	    }  
+	  
+	    100% {  
+	        transform: translate(100px, -80px );
+	    }  
+	}
+
+	</style>
+</head>
+<body>
+	<img src="rocket_ship/RocketShip_rev.svg" id="rocketAnimate" class="target animate">
+	<!-- <p id="paragraph" class="target animate">To infinity and beyond</p> -->
+	
+</body>
+</html>

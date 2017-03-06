@@ -1,0 +1,117 @@
+.results {
+  display: none;
+  padding-top: 80px;
+  // height: 180vh;
+}
+
+ .results h2 {
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+  transform: rotate(-4deg);
+  padding-bottom: 50px;
+  color: $blue;
+  font-size: 70px;
+  margin-right: 10px;
+ }
+
+.results__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.results__weather {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.weather__image {
+  width: 150px;
+  color: $blue;
+  margin-right: 10px;
+}
+
+img.weather__icon {
+  width: 70%;
+  padding: 0;
+  margin: 0;
+}
+
+h3.weather__string {
+  font-size: 20px;
+  margin: 0;
+  font-weight: normal;
+  margin-top: -15px;
+}
+
+.weather__widget{
+  padding-left: 10px;
+  padding-right: 30px;
+  margin: 0;
+}
+
+.city__name {
+  color: $blue;
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.temp {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+  color: $pink;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+
+.clothing img{
+  width: 90%;
+  padding: 20px 0px 20px 50px;
+}
+
+// .clothing__desc {
+//   color: black;
+//   margin-top: 10px;
+//   width: 150px;
+//   text-align: right;
+// }
+
+
+//MEDIA QUERIES
+
+
+ 
+//Landscape phones and down
+@media (max-width: 630px) {
+  .results__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.clothing{
+  margin-top: 50px;
+}
+
+}
+
+
+
+
+@media (max-width: 410px) {
+  .results h2 {
+   font-size: 50px;
+  }
+
+  h3.weather__string {
+  font-size: 18px;
+}
+
+ 
+}

@@ -1,0 +1,56 @@
+html
+    font-family $openSans
+    
+section
+	flexCenter()
+	width $full
+	
+.gameGrid
+	flexCenter()
+	padding-top 1rem
+	margin 0 auto
+	flex-wrap wrap
+	width 800px
+	
+.gameTile
+	flexCenter()
+	width calc(200px - 20px)
+	height 270px
+	background brown
+	margin 10px
+	padding 1rem
+	box-shadow 0px 0px 20px 0px rgba(100,100,100,0.4)
+	cursor pointer
+	
+.faceUp 
+	background goldenrod
+	
+.matched
+	background green
+	
+.wrapper
+	width 1400px
+	background darkcyan
+	margin auto
+
+.game
+	flexCenter()
+	justify-content space-between
+	
+.spaceWrapper
+	margin 25px
+	border-top 10px solid cyan
+	border-left 10px solid cyan
+	border-radius 50px
+	width 500px
+	height 900px
+	background url('../images/space.jpg') black
+	background-position center 100%
+	transition 2s background-position ease
+	background-repeat no-repeat
+	
+// @keyframes moveSpace
+// 	0% 
+// 		background-position center 100%
+// 	100%
+// 		background-position center 0%

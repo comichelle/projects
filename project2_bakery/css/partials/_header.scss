@@ -1,0 +1,242 @@
+header {
+	background: url("../images/header/hero.jpg");
+	// min-height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+}
+
+.headerMenu {
+	float: right;
+	margin: 30px 30px 0 0;
+}
+
+.headerMenu i {
+	color: #000;
+}
+
+.headerMenu i:visited {
+	color: #000;
+}
+
+.header__content {
+	padding-top: 150px;
+}
+
+header img {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	padding: 1px 0;
+}
+
+img.header__logo {
+	width: 160px;
+	opacity: 0.7;
+}
+
+img.header__text {
+	width: 450px;
+	margin-bottom: 10px;
+}
+
+header ul {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	width: 280px;
+	color: #FFF;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
+header ul li {
+	float: left;
+	letter-spacing: 1px;
+	padding: 0 10px;
+}
+
+/////// CONTACT CIRCLE ////////
+
+
+.header__contact {
+	background: url("../images/header/circle.png");
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	padding: 60px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	top: 115px;
+}
+
+
+.header__contact p {
+	top: 0;
+	color: white;
+	padding-bottom: 50px 0;
+}
+
+
+
+/////////////////////// MEDIA QUERIES ///////////////////////
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1080px) {
+	.header__contact {
+		top: 110px;
+	}
+}
+
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.header__contact {
+		top: 115px;
+		padding: 60px;
+	}
+
+	header img {
+		padding: 1px 0;
+	}
+
+	img.header__logo {
+		width: 155px;
+	}
+
+	img.header__text {
+		width: 420px;
+	}
+
+	header ul {
+		font-size: 14px;
+	}
+
+	header ul li {
+		padding: 0 8px;
+	}
+
+	.header__content {
+		padding-top: 130px;
+	}
+
+
+}
+ 
+
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+	header {
+		min-height: 70vh;
+	}
+
+	.header__content {
+		padding-top: 120px;
+	}
+
+	.header__contact p {
+		font-size: 12px;
+	}
+
+	.header__contact {
+		top: 100px;
+	}
+
+
+	img.header__logo {
+		width: 120px;
+	}
+
+	img.header__text {
+		width: 380px;
+	}
+
+	header ul {
+		font-size: 12px;
+		width: 220px;
+	}
+
+	header ul li {
+		padding: 0 8px;
+	}
+
+
+}
+ 
+
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	header {
+		min-height: 50vh;
+	}
+
+	.header__content {
+		padding-top: 90px;
+	}
+
+	.header__contact p {
+		font-size: 12px;
+	}
+
+	.header__contact {
+		top: 100px;
+	}
+
+
+	img.header__logo {
+		width: 70px;
+	}
+
+	img.header__text {
+		width: 320px;
+	}
+
+	header ul {
+		font-size: 12px;
+	}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 350px) {
+
+	header {
+		min-height: 40vh;
+	}
+
+	.header__content {
+		padding-top: 90px;
+	}
+
+	.header__contact p {
+		font-size: 12px;
+	}
+
+	.header__contact {
+		top: 100px;
+	}
+
+
+	img.header__logo {
+		width: 50px;
+	}
+
+	img.header__text {
+		width: 245px;
+	}
+
+	header ul {
+		font-size: 12px;
+	}
+
+}

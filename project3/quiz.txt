@@ -1,0 +1,92 @@
+ideas
+1920 x 1080
+
+1400 x 1080
+
+quiz
+
+
+font family: orbitron
+
+start page
+
+title: cohort 13 to the moon
+
+choose your player buttonsw
+
+start button
+
+page slides to the left
+
+quiz opens
+
+///
+ANIMATION
+
+rocket
+background image
+
+
+@-moz-keyframes breathe-head {  
+    0% {  
+        -moz-transform: rotate(1deg) translate(0px, 0px);  
+    }  
+    40% {  
+        -moz-transform: rotate(-3deg) translate(-2px, -1px);  
+    }  
+  
+    100% {  
+        -moz-transform: rotate(1deg) translate(0px, 0px);  
+    }  
+}  
+
+
+//////////
+
+#sun.animate {
+	animation-name: sunrise;
+	animation-duration: 10s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;	
+	animation-direction: normal;
+	animation-delay: 0;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+}
+
+@keyframes sunrise {
+
+	0% {
+		bottom: 0;
+		left: 340px;
+		background: #f00;
+	}
+	
+	33% {
+		bottom: 340px;
+		left: 340px;
+		background: #ffd630;
+	}
+
+	66% {
+		bottom: 340px;
+		left: 40px;
+		background: #ffd630;
+	}
+
+	100% {
+		bottom: 0;
+		left: 40px;
+		background: #f00;
+	}
+
+}
+
+Game space
+
+launch cohort 13
+
+buttons:
+true 
+false
+restart

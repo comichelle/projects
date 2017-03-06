@@ -1,0 +1,41 @@
+@import "partials/setup";
+@import "partials/variables";
+@import "partials/header";
+@import "partials/gender";
+@import "partials/getlocation";
+@import "partials/results";
+
+.wrapper {
+  max-width: $wrapperWidth;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+footer {
+	padding: 20px 0;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 600;
+	display: none;
+}
+
+footer a {
+	color: $blue;
+	text-decoration: none;
+}
+
+footer a:hover {
+	transition: all 0.2s ease-in-out;
+	color: $pink;
+
+}
+
+footer a:link {
+	color: $blue;
+	outline: none;
+}

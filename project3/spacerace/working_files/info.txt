@@ -1,0 +1,67 @@
+Level 1
+	4x4 board
+	8 tries
+
+Level 2
+	6x6 board
+	12 tries + left over tries
+
+Level 3
+	8x8 board
+	16 tries + left over tries
+
+Level 4
+	10x10 board
+	20 tries + left over tries
+
+etc..
+
+
+
+Tile
+	value
+	background-color
+	image
+
+
+
+Load level 1
+Create game board
+Create and spawn tiles
+If player clears board
+	load level 2
+else
+	game over (try again ?)
+
+MEMORY MATCH
+
+5X4 Board
+Theme: Web Dev or Cohort 13 headshots
+Horizontal Flip (CSS + jquery trigger)
+
+
+
+
+Logic Test
+
+			--- True
+(true) ----|
+			--- False
+
+			--- True
+(false) ----|
+			--- False
+
+			  				 --- True
+(100 === 100 && 45 < 50) ----|
+			  				 --- False
+
+
+			  				 --- True
+(100 === 100 || 45 < 50) ----|
+			  				 --- False
+
+
+
+
+

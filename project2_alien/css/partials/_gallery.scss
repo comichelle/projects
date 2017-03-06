@@ -1,0 +1,40 @@
+.gallery-wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap; 
+	padding: 0;
+}
+
+.gallery-items {
+	width: 33.3%;
+	list-style-type: none;
+	img {
+	width: 100%;
+	display: block;
+	}		
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+	.gallery-items {
+	width: 50%;	
+	}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.gallery-items {
+	width: 100%;	
+	}
+	
+}

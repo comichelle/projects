@@ -1,0 +1,208 @@
+.reservations {
+	background: url("../images/reservations/reservationbg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 100px 0 210px;
+}
+
+textarea {
+	resize: none;
+}
+
+.reservations h2 {
+	margin-bottom: 40px;
+}
+
+.reservations__content {
+	max-width: 36%;
+	float: left;
+}
+
+.reservations__content p:first-child {
+	line-height: 30px;
+	margin: 0;
+}
+
+
+////Phone Reservations box///////////
+
+.reservations__content--number { 
+	border: 2px solid #3e3d41;
+	outline: 4px solid #3e3d41;
+	outline-offset: 2px;
+	color: #3e3d41;
+	font-size: 20px;
+	padding: 20px 15px;
+	display: flex;
+	flex-direction: row;
+	margin-top: 60px;
+}
+
+.reservations__content--number i { 
+	color: $orange;
+	font-size: 40px;
+	padding: 10px;
+}
+
+.reservations__content--text {
+	margin-left: 15px;
+}
+
+.reservation__buttonTitle {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.reservation__buttonNumber {
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 22px;
+}
+
+///////FORM/////////////////////////
+
+.reservations__form {
+	max-width: 60%;
+	float: right;
+	border: 2px solid #3e3d41;
+	outline: 4px solid #3e3d41;
+	outline-offset: 2px;
+}
+
+.reservations__form--top {
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.reservations__form--topcol {
+	width: 50%;
+	color: #000;
+}
+
+.input__text {
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 20px;
+	font-size: 12px;
+}
+
+.reservations__form--textarea textarea {
+	width: 100%;
+	height: 100px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 20px;
+	font-size: 12px;
+	height: 200px;
+}
+
+//////BUTTON//////
+
+.reservations button {
+	background: url("../images/graphics/seal.png");
+	background-repeat: no-repeat;
+	background-size: 40%;
+	background-position: 2%;
+	width: 100%;
+	padding: 50px;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 20px;
+	// margin: 10px;
+	border: none;
+	background-color: $white;
+}
+
+
+
+
+
+/////////////////////// MEDIA QUERIES ///////////////////////
+
+
+/*  Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.reservations {
+		padding: 100px 20px 210px;
+	}
+
+}
+ 
+
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+	.reservations__content {
+		max-width: 100%;
+	}
+
+	.reservations__content--number { 
+		padding: 20px 20px;
+	}
+
+
+	.reservation__buttonTitle {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 22px;
+	}
+
+	.reservation__buttonNumber {
+		text-transform: uppercase;
+		font-weight: 800;
+		font-size: 25px;
+	}
+
+
+	///////FORM/////////////////////////
+
+	.reservations__form {
+		max-width: 100%;
+		margin-top: 50px;
+	}
+
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.reservation__buttonTitle {
+		font-size: 18px;
+	}
+
+	.reservation__buttonNumber {
+
+		font-size: 20px;
+	}
+
+	.reservations__form--top {
+		display: block;
+	}
+
+	.reservations__form--topcol {
+		width: 100%;
+	}
+
+}
+
+/*  Landscape phones and down */
+@media (max-width: 350px) {
+	.reservations h2 {
+		font-size: 35px;
+	}
+	
+	.reservation__buttonTitle {
+		font-size: 15px;
+	}
+
+	.reservation__buttonNumber {
+
+		font-size: 16px;
+	}
+
+}

@@ -1,0 +1,263 @@
+number (< > === <= >= !==) number (|| &&) number (< > === <= >= !==) number (|| &&) number (< > === <= >= !==) number
+
+
+question difficulty
+
+easy
+	2 numbers
+	1 comparison operator
+
+normal
+	4 numbers
+	2 comparison operators
+	1 logic operators
+
+hard
+	6 numbers
+	3 comparison operators
+	2 logic operators
+
+var numbers [50, 100, 150, 200, 250, 300]
+var logicOperators = ["||", "&&"]
+var comparisonOperators = ["<", ">", "===", "<=", ">=", "!==]"
+
+function getRandomFromArray(array)
+{
+	math.random * array.length
+}
+
+
+function generatQuestion(numberOfStatements) {
+	var numbers = [];
+	var comparisionOperators = [];
+	var logicOperators = [];
+	var question = '';
+	var answer = '';
+
+	var numberOfNumbers = numberOfStatements * 2;
+	var numberOfComparisonOperators = numberOfStatements;
+	var numberOfLogicOperators = numberOfStatements - 1;
+
+	for(var i = 0; i <= numberOfNumbers; i++) {
+		numbers.push(getRandomFromArray(numbers));
+	}
+
+	for(var i = 0; i <= numberOfComparisonOperators; i++) {
+		comparisionOperators.push(getRandomFromArray(comparisonOperators));
+	}
+
+	for(var i = 0; i <= numberOfLogicOperators; i++) {
+		logicOperators.push(getRandomFromArray(logicOperators));
+	}
+
+	if(numberOfStatements === 1) {
+		question = `${numbers[0]} ${comparisionOperators[0]} ${numbers[1]}`;
+
+	}
+	else if(numberOfStatements === 2){
+		question = `${numbers[0]} ${comparisionOperators[0]} ${numbers[1]} ${logicOperators[0]} ${numbers[2]} ${comparisionOperators[1]} ${numbers[3]}`;
+	}
+	else if(numberOfStatements === 3){
+		question = `${numbers[0]} ${comparisionOperators[0]} ${numbers[1]} ${logicOperators[0]} ${numbers[2]} ${comparisionOperators[1]} ${numbers[3]} ${logicOperators[1]} ${numbers[4]} ${comparisionOperators[2]} ${numbers[5]}`;
+	}
+
+	answer = eval(question);
+
+	return {question, answer};
+}
+
+
+
+
+if easy
+	var num1 = get random item from numbers
+	var num2 = get random item from numbers
+	var compOp = get random item from comparisonOperators
+
+	var question = `(${num1} ${compOp} ${num2})`
+
+	var answer = eval(question);
+
+
+if hard
+	var num1 = get random item from numbers
+	var num2 = get random item from numbers
+	var compOp = get random item from comparisonOperators
+
+	var question = `(${num1} ${compOp} ${num2})`
+
+	var answer = eval(question);
+
+
+
+
+
+
+
+	logicOp = get random item from logicOperators
+
+
+
+
+
+
+15
+
+easy
+easy
+easy
+easy
+easy
+
+normal
+normal
+normal
+normal
+normal
+
+hard
+hard
+hard
+hard
+hard
+
+
+    $('button').on('click', function() {
+        // A variable to hold the button that was clicked
+        var buttonClicked = $(this);
+        console.log(eval(buttonClicked.val()));
+
+        // Check if asnwer is correct
+        if(eval(buttonClicked.val()) === game.questions[0].answer) {
+            console.log('CORRECT');
+        }
+        else {
+            console.log('WRONG');
+        }
+
+    });
+
+
+    
+        if(buttonClicked.hasClass('true')) {
+            if(game.questions[0].answer === true) {
+                console.log('CORRECT');
+            }
+            else {
+                console.log('WRONG');
+            }
+        }
+        else if(buttonClicked.hasClass('false')) {
+            if(game.questions[0].answer === false) {
+                console.log('CORRECT');
+            }
+            else {
+                console.log('WRONG');
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+    // function restartCountDown() {
+    //     stopCountDown();
+    //     startCountDown(5, 1000);
+    // }
+
+
+    
+
+
+    // function createCountDown(startingNumber, interval) {
+    //     var countDownNumber = startingNumber;
+
+    //     var countdown = setInterval(function() {
+    //         console.log(countDownNumber);
+    //         $clock.html(countDownNumber);
+    //         if(countDownNumber <= 0) {
+    //             console.log('ZERO')
+    //             console.log('[TIMER BEFORE]' + countdown);    
+    //             clearInterval(countdown);
+    //             console.log('[TIMER]' + countdown);
+    //             startCountDown(startingNumber, interval);
+    //         }
+    //         countDownNumber--;
+
+    //     },interval);
+
+    //     return countdown;
+    // }
+
+    // function startCountDown(startingNumber, interval) {
+    //     var countDownTimer;
+    //     // if(countDownTimer !== undefined) {
+    //     // }
+    //     clearTimeout(countDownTimer);
+    //     // $clock.html(startingNumber);
+    //     countDownTimer = createCountDown(startingNumber, interval);
+        
+    // }
+
+    // function startCountDown(countDown, interval) {
+
+    //     // Make a copy of the countDown parameter, so I can be manipulated
+    //     var countDownNumber = countDown;
+
+    //     // Create and assign the count property to the $clock element
+    //     $clock.count = function(countDownNumber) {
+
+    //         // Update the $clock element text
+    //         $clock.html(countDownNumber);
+
+    //         // Check if countdown has reached 0
+    //         if (countDownNumber < 0) {
+
+    //             // Start new countdown
+    //             startCountDown(countDown, interval);
+
+    //             // Stop this countdown
+    //             return;
+    //         }
+
+    //         // Create a reference to the timeout
+    //         setTimeout(function() {
+
+    //             // Countdown by 1
+    //             $clock.count(countDownNumber - 1);
+    //         }, interval);
+    //     }
+    // }
+   
+    // function startCountDown(i, p) {
+    //     var interval = i;
+    //     var pause = p;
+    //     var countDownObj = $clock;
+
+    //     countDownObj.count = function(interval) {
+    //         //  write out count
+    //         countDownObj.html(interval);
+    //         if (interval < 0) {
+    //             //  execute function
+    //             startCountDown(i, p, myFunction);
+    //             //  stop
+    //             return;
+    //         }
+    //         clockTimeout = setTimeout(function() {
+    //                 //  repeat
+    //                 countDownObj.count(interval - 1);
+    //         }, pause);
+    //     }
+    //     //  set it going
+    //     countDownObj.count(i);
+    // }

@@ -1,0 +1,320 @@
+.journal {
+	background: url("../images/gallery-journal/journalbg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 100px 0 130px;
+}
+
+.journal h2 {
+	margin-bottom: 50px;
+}
+
+.journal__images img {
+		width: 100%;
+	}
+
+ul.journal__images {
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul.journal__images li {
+	position: relative;
+	display: inline-block;
+	width: 33.3%;
+}
+
+ul.journal__images li img {
+	max-width: 100%;
+	display: block;
+}
+
+.journal__images--overlay {
+	opacity: 0;
+	padding-top: 45%; ///change to percents make p and header in div
+	position: absolute;
+	width: 100%;
+  	height: 100%;
+	background-color: rgba(256, 256, 256, 0.6);
+	color: #000;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	left: 0;
+	cursor: default;
+	overflow: hidden;
+	-webkit-transition: all 0.5s; 
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.journal__images--overlay span {
+	background-color: $orange;
+	font-size: 12px;
+	text-align: right;
+	float: right;
+	padding: 3px 5px;
+	color: $white;
+	margin-right: 20px;
+}
+
+.journal__images--overlay span p {
+	color: #fff;
+}
+
+.journal__images--overlay h4 {
+	font-family: 'Rufina', serif;
+	font-size: 20px;
+	text-align: right;
+	padding-right: 20px;
+}
+
+ul.journal__images li:hover .journal__images--overlay {
+	display: block;
+	opacity: 1;
+}
+
+.journal button {
+	background-color: inherit;
+	cursor: pointer;
+	width: 130px;
+	height: 45px;
+	color: $orange;
+	border: 1px solid $orange;
+	margin-top: 100px;
+	margin-left: 42%;
+}
+
+.journal button:hover {
+	transition: all 0.2s ease-in-out;
+	background-color: $orange;
+	cursor: pointer;
+	color: $white;
+	border: 1px solid $orange;
+}
+
+
+///// MIDDLE PART ///////
+
+.journal__images--items {
+	background-color: white;
+	// display: block;
+	width: 100%;
+	// height: 100%;
+}
+
+.journal__middle {
+	padding: 20px 20px 0 20px;
+}
+
+.journal__middle span {
+	background-color: $orange;
+	font-size: 12px;
+	text-align: right;
+	padding: 3px 5px;
+	color: $white;
+	margin-right: 20px;
+}
+
+.journal__middle span p {
+	color: #fff;
+}
+
+.journal__middle h4 {
+	font-family: 'Rufina', serif;
+	font-size: 20px;
+	padding-right: 20px;
+	margin-top: 5px;
+}
+
+.journal__middle p {
+	color: #6b666b;
+	line-height: 30px;
+	font-size: 15px;
+}
+
+
+
+
+
+
+/////////////////////// MEDIA QUERIES ///////////////////////
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.journal {
+		padding: 100px 20px 130px;
+	}
+
+	ul.journal__images {
+		padding: 0;
+		list-style-type: none;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	ul.journal__images li {
+		position: relative;
+		display: inline-block;
+		width: 33.3%;
+	}
+
+	ul.journal__images li img {
+		max-width: 100%;
+		display: block;
+	}
+
+	.journal__middle {
+		height: 150px;
+	}
+
+
+	.journal__middle p {
+		line-height: 20px;
+		font-size: 12px;
+	}
+
+}
+ 
+
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+	ul.journal__images li {
+		width: 50%;
+	}
+
+	ul.journal__images li img {
+		max-width: 100%;
+	}
+
+
+}
+
+
+@media (max-width: 620px) {
+
+	ul.journal__images li {
+		width: 50%;
+	}
+
+	.journal__middle {
+		padding: 20px 20px 0 20px;
+		height: 120px;
+	}
+
+	.journal__middle h4 {
+		font-size: 18px;
+		padding-right: 20px;
+	}
+
+	.journal__middle p {
+		font-size: 12px;
+		line-height: 12px;
+	}
+
+
+}
+
+ 
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+	ul.journal__images li {
+		width: 100%;
+	}
+
+//
+
+	.journal__images--overlay span {
+		font-size: 15px;
+		padding: 3px 5px;
+		margin-right: 20px;
+	}
+
+	.journal__images--overlay h4 {
+		font-size: 25px;
+		padding-right: 20px;
+	}
+
+//
+
+	.journal__images--items {
+		width: 100%;
+	}
+
+	.journal__middle {
+		padding: 20px 20px 0 20px;
+		height: 200px;
+	}
+
+	.journal__middle span {
+		font-size: 12px;
+		padding: 3px 5px;
+		margin-right: 20px;
+	}
+
+	.journal__middle h4 {
+		font-size: 20px;
+		padding-right: 20px;
+	}
+
+	.journal__middle p {
+		font-size: 15px;
+		line-height: 25px;
+	}
+
+	.journal button {
+		margin-top: 50px;
+		margin-left: 28%;
+	}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 350px) {
+	
+	.journal button {
+		margin-top: 50px;
+		margin-left: 20%;
+	}
+
+	//
+
+	.journal__images--overlay span {
+		font-size: 12px;
+		padding: 3px 5px;
+		margin-right: 20px;
+	}
+
+	.journal__images--overlay h4 {
+		font-size: 16px;
+		padding-right: 10px;
+	}
+
+	//
+	
+	.journal__middle {
+		padding: 20px 20px 0 20px;
+		height: 200px;
+	}
+
+	.journal__middle h4 {
+		font-size: 20px;
+		padding-right: 20px;
+	}
+
+	.journal__middle p {
+		font-size: 15px;
+		line-height: 15px;
+	}
+
+}

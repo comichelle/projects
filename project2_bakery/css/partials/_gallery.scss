@@ -1,0 +1,148 @@
+.gallery {
+	background-image: url("../images/gallery-journal/gallerybg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 130px 0px;
+}
+
+.gallery h2 {
+	margin-bottom: 50px;
+}
+
+.gallery__list  {
+	width: 25%;
+	border: 2px solid #3e3d41;
+	outline: 4px solid #3e3d41;
+	outline-offset: 2px;
+ 	padding: 10px 50px;
+ 	float: left;
+ 	text-align: right;
+ 	direction: rtl;	
+}
+
+.gallery__list ul li {
+	font-family: 'Rufina', serif;
+	padding: 10px 0;
+	font-weight: 600;
+}
+
+.gallery__list ul li:hover {
+	color: $orange;
+	list-style-type: circle;
+}
+
+.gallery__images {
+	max-width: 72%;
+	float: right;
+}
+
+.gallery__images ul {
+	margin: 0;
+}
+
+.gallery_ul {
+	display: flex;
+	flex-wrap: wrap; 
+	list-style-type: circle;
+	text-decoration: inherit;
+}
+
+
+.gallery__images--items {
+	width: 33.3%;
+	list-style-type: none;
+	img {
+	width: 100%;
+	display: block;
+	}
+}
+
+
+
+/////////////////////// MEDIA QUERIES ///////////////////////
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.gallery {
+		background-size: cover;
+		padding: 130px 10px;
+	}
+
+	.gallery h2 {
+		margin-bottom: 50px;
+	}
+
+	.gallery__list  {
+		width: 25%;
+	 	padding: 10px 40px;
+	}
+
+}
+ 
+
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+	.gallery {
+		padding: 130px 15px;
+	}
+
+	.gallery__list  {
+		width: 100%;
+		height: 80%;
+	 	padding: 10px 40px;
+	 	text-align: left;
+	 	padding: 10px 50px;
+ 		direction: inherit;	
+	}
+
+	.gallery__list ul li {
+		float: left;
+		width: 100px;
+		padding: 10px 0px;	
+		margin-left: 15px;
+	}
+
+	.gallery__images {
+		max-width: 100%;
+		margin-top: 50px;
+	}
+
+	.gallery__images--items {
+		width: 50%;
+		list-style-type: none;
+		img {
+		width: 100%;
+		display: block;
+		}
+	}
+
+
+}
+ 
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+
+	.gallery__images--items {
+		width: 100%;
+		list-style-type: none;
+		img {
+		width: 100%;
+		display: block;
+		}
+	}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 350px) {
+
+	
+
+}

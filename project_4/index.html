@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Trends</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Raleway:200,300,400,400i,500,600,700,700i,800,800i,900,900i|Satisfy|Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header>
+  <div class="wrapper">
+    <div class="title" id="the__top">
+      <h1>WeatherTrends</h1>
+      <div class="subtitle_tilt">
+        <h2 class="subtitle">with style</h2>
+      </div>
+    </div>
+  </div>
+  <div class="arrow__down__btn bounce" id="arrow__down__btn_scroll">
+    <a href="#gender__scroll" class="btn"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+  </div>
+  </header>
+
+  <main>
+  	<section class="gender" id="gender__scroll">
+    <div class="wrapper">
+  		<div class="genderwrapper">
+  			<h2>What is your <span class="underline">style</span>?</h2>
+        <button class="buttonFemale">Feminine</button>
+  			<button class="buttonMale">Masculine</button>
+  		</div>
+    </div>
+  	</section>
+
+    <section class="get__location" id="location__scroll">
+      <div class="wrapper">
+        <h2><span>Where</span> are you now?</h2>
+        <div class="get__location__form">
+          <form name="pickCity" id="pickCity__reset">
+            <!-- Input for country/state/province -->
+            <input type="text" name="city" placeholder="State/Province" id="provinces">
+            <!-- Input for city -->
+            <input type="text" name="city" placeholder="City" class="city__input">
+            <input type="submit" class="get__location__submit">
+          </form>
+        </div>
+      </div>
+    </section>
+
+  	<section class="results" id="results__scroll">
+      <div class="wrapper">
+        <h2>and...ta-da!</h2>
+        <div class="results__wrap">
+          <!--Weather Icon Image -->
+          <div class="results__weather">
+            <div class="weather__image">
+              <img src="" alt="weather icon" class="weather__icon">
+              <h3 class="weather__string"><span >{ Weather }</span></h3>
+            </div>
+
+        	  <div class="weather__widget">
+              <p class="city__name">{ City Name }</p>
+        	    <p class="temp"><span class="temp__c">##</span>&#176;c</p>
+              <!-- <div class="clothing__desc"></div> -->
+        	  </div>
+          </div>
+
+          <div class="clothing clear"></div>
+        </div>
+      </div>
+  	</section> 
+
+    <footer class="top">
+      <div class="wrapper">
+        <a href="#top" class="top__btn">Top</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

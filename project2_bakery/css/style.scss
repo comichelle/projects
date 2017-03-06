@@ -1,0 +1,59 @@
+@import "partials/setup";
+@import "partials/variables";
+@import "partials/header";
+@import "partials/products";
+@import "partials/menu";
+@import "partials/about";
+@import "partials/gallery";
+@import "partials/journal";
+@import "partials/reservations";
+@import "partials/contact";
+@import "partials/footer";
+
+.wrapper {
+	max-width: $wrapperWidth;
+	margin: 0 auto;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	color: #414046;
+}
+
+h2 {
+	font-family: 'Rufina', serif;
+	font-size: 45px;
+	color: #ea9044;
+	margin-bottom: 30px;
+ 	margin:0;
+ }
+
+
+h3 {
+	font-family: 'Rufina', serif;
+	font-size: 30px;
+	color: #e3d41;
+	margin: 20px 0
+}
+
+h5 {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-size: 17px;
+	color: $white;
+}
+
+
+ul {
+	padding: 0;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+::-webkit-input-placeholder {
+   color: #3e3d41;
+   font-weight: 800;
+}

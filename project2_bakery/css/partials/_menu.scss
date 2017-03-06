@@ -1,0 +1,184 @@
+.menu {
+	background: url("../images/menu/menubg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 100px 0; //changed height
+}
+
+.menu__header {
+	background: url("../images/menu/menu.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 0 auto;
+	// width: 80%;
+	padding: 50px 0 50px 0; 
+}
+
+h1 {
+	font-family: 'Rufina', serif;
+	color: #FFF;
+	font-size: 55px;
+	font-weight: 400;
+	text-align: center;
+ }
+
+ .menu__dessert {
+	width: 48%;
+	float: left;
+	border: 2px solid #3e3d41;
+	outline: 4px solid #3e3d41;
+	outline-offset: 2px;
+	margin-top: 40px;
+	padding: 17px 30px;
+}
+
+.menu__dessert ul, .menu__pastryCoffee ul {
+	list-style-type: none;
+}
+
+.menu__pastryCoffee {
+	width: 48%;
+	float: right;
+	border: 2px solid #3e3d41;
+	outline: 4px solid #3e3d41;
+	outline-offset: 2px;
+	margin-top: 40px;
+	padding: 20px 30px;
+}
+
+ h3.menu__headersProducts {
+	font-family: 'Rufina', serif;
+	font-size: 30px;
+	color: #ea9044;
+	text-decoration: underline;
+	margin-bottom: 30px;
+}
+
+
+ .menu ul li.menu__headerCat {
+ 	font-family: 'Raleway', sans-serif;
+ 	text-transform: uppercase;
+ 	color: white;
+ 	font-size: 18px;
+ 	font-weight: 600;
+}
+
+span.menu__price {
+	float: right;
+}
+
+.menu ul.menu__coffee {
+	color: white;
+}
+
+.menu li.menu__description {
+	font-family: 'Raleway', sans-serif;
+	color: #6b666b;
+	font-weight: normal;
+	text-transform: unset;
+	padding: 15px 0 30px 0;
+	font-size: 13px;
+	max-width: 80%;
+}
+
+.menu__coffee li {
+	padding-bottom: 17px;
+}
+
+
+/////////////////////// MEDIA QUERIES ///////////////////////
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.menu {
+		padding: 100px 30px;
+	}
+
+	.menu__dessert {
+		margin-top: 40px;
+		padding: 17px 30px 8px;
+	}
+
+
+	.menu li.menu__description {
+		font-size: 12px;
+	}
+
+}
+ 
+
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+	.menu {
+		padding: 80px 30px;	
+	}
+
+	.menu__header {
+		background-size: 300px; 
+	}
+
+	h1 {
+		font-size: 50px;
+	 }
+
+	.menu__dessert {
+		margin-top: 40px;
+		padding: 17px 30px 8px;
+		width: 100%;
+	}
+
+	.menu li.menu__description {
+		font-size: 12px;
+	 	max-width: 100%;
+	}
+
+	.menu__pastryCoffee {
+		width: 100%;
+		margin-top: 40px;
+	}
+
+
+}
+ 
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	
+	.menu {
+		padding: 60px 30px;	
+	}
+
+	.menu__header {
+		background-size: 250px; 
+	}
+
+	h1 {
+		font-size: 40px;
+	 }
+
+}
+
+
+
+
+/* Landscape phones and down */
+@media (max-width: 350px) {
+
+	.menu__header {
+		background-size: 200px; 
+	}
+
+	.menu__header {
+		background-size: 190px; 
+	}
+
+
+	h1 {
+		font-size: 30px;
+	 }
+
+}

@@ -1,0 +1,10 @@
+@import "partials/setup";
+@import "partials/variables";
+@import "partials/header";
+@import "partials/gallery";
+@import "partials/footer";
+
+.wrapper {
+	max-width: $wrapperWidth;
+	margin: 0 auto;
+}

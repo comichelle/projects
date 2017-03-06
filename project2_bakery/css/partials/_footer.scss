@@ -1,0 +1,141 @@
+.footer {
+	background: url("../images/footer/footerbg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 100px 0;
+	color: $white;
+	line-height: 25px;
+}
+
+footer h5 {
+	margin-bottom: 10px;
+}
+
+.footer__columns p.first {
+	line-height: 25px;
+	padding-bottom: 30px;
+}
+
+.footer span.footer__orange {
+	color: $orange;
+}
+
+.footer span.footer__orange a:link {
+	color: $orange;
+}
+
+.footer span.footer__orange a:visited {
+	color: $orange;
+}
+
+
+.footer span.footer__bold {
+	font-weight: 600;
+}
+
+
+////// SOCIAL MEDIA /////////////////
+
+.footer__columns {
+	width: 27%;
+	float: left;
+}
+
+.footer__columns:first-child {
+	width: 35%;
+	margin-right: 100px;
+}
+
+.footer__columns ul {
+	padding: 0;
+	// margin: 50px 0;
+}
+
+
+.footer__columns ul li {
+	text-decoration: none;
+	list-style-type: none;
+	display: inline-block;
+	padding: 0 3px;
+}
+
+.footer__columns i {
+	transition: all 0.2s ease-in-out;
+	color: $white;
+	font-size: 25px;
+}
+
+.footer__columns i:hover {
+	color: $orange;
+}
+
+///////MIDDLE COLUMN///////
+
+.footer__columns a {
+	color: $orange;
+}
+
+.footer__columns a:visited {
+	color: $orange;
+}
+
+.footer__columns a:hover {
+	color: $white;
+}
+
+
+
+
+///////LAST COLUMN///////
+
+.last p {
+	line-height: 15px;
+}
+
+.last p.last__orange {
+	color: $orange;
+	line-height: 25px;
+}
+
+h5.footer__lastHead {
+	margin-top: 50px;
+}
+
+
+/////////////////////// MEDIA QUERIES ///////////////////////
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.footer {
+		padding: 100px 20px;
+	}
+
+
+	.footer__columns {
+		width: 30%;
+		float: left;
+	}
+
+	.footer__columns:first-child {
+		margin-right: 35px;
+	}
+
+}
+ 
+
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+	.footer__columns {
+		width: 100%;
+	}
+
+	.footer__columns:first-child {
+		width: 100%;
+	}
+
+}
+

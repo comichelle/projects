@@ -1,0 +1,93 @@
+.products {
+	height: 600px;
+}
+
+.wrapper__products {
+	display: flex;
+	flex-direction: row;
+}
+
+.products__columns {
+	margin-top: 180px;
+	text-align: center;
+	padding: 0 40px;
+}
+
+img.product__pastry {
+	width: 73%;
+}
+
+img.product__coffee {
+	width: 100%;
+}
+
+img.product__cupcake {
+	width: 50%;
+}
+
+
+/////////////////////// MEDIA QUERIES ///////////////////////
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.products__columns {
+		margin-top: 180px;
+		text-align: center;
+		padding: 0 40px;
+	}
+
+}
+ 
+
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+
+	.products {
+		height: 1100px;
+	}
+
+	.products__columns:first-child {
+		margin-top: 200px;
+		padding: 0 10px;
+	}
+
+	.products__columns {
+		margin-top: 50px;
+		padding: 0 10px;
+	}
+
+	.wrapper__products {
+	display: flex;
+	flex-direction: column;
+}
+
+	img.product__pastry {
+		width: 150px;
+	}
+
+	img.product__coffee {
+		width: 150px;
+	}
+
+	img.product__cupcake {
+		width: 150px;
+	}
+
+
+
+}
+ 
+
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.products {
+		height: 1150px;
+	}
+
+}
+

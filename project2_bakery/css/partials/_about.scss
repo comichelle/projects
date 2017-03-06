@@ -1,0 +1,102 @@
+.about {
+	background: url("../images/about/aboutbg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 150px 0;
+}
+
+.about__content {
+	max-width: 50%;
+}
+
+
+.about__content h2 {
+	margin-bottom: 100px;
+}
+
+.about__content p {
+	line-height: 30px;
+}
+
+.about__content img {
+	margin-top: 100px;
+}
+
+/////////////////////// MEDIA QUERIES ///////////////////////
+
+
+/* 	GREEN Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.about {
+		padding: 150px 50px;
+	}
+
+	.about__content {
+		max-width: 50%;
+	}
+
+
+	.about__content h2 {
+		margin-bottom: 70px;
+	}
+
+	.about__content p {
+		line-height: 30px;
+	}
+
+	.about__content img {
+		margin-top: 100px;
+	}
+
+}
+ 
+
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+	.about {
+		padding: 110px 20px;
+	}
+
+	.about__content {
+		max-width: 50%;
+	}
+
+
+	.about__content h2 {
+		margin-bottom: 50px;
+	}
+
+	.about__content p {
+		line-height: 30px;
+	}
+
+	.about__content img {
+		margin-top: 80px;
+	}
+
+}
+ 
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.about {
+		padding: 90px 20px;
+		background-size: 9150px;
+	}
+
+	.about__content {
+		max-width: 100%;
+	}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 350px) {
+
+	
+
+}
